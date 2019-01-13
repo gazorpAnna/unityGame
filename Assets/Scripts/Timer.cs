@@ -11,14 +11,15 @@ public class Timer : MonoBehaviour {
 	
 	private Text    m_text;
 	private float   m_leftTime;
+    bool fin;
 
 	private void Start()
 	{
+        fin = false;
         enemy = GameObject.FindGameObjectsWithTag("Police");
-        for (int i = 0; i < enemy.Length; i++)
+        foreach(GameObject g in enemy)
         {
-
-            enemy[i].SetActive(false);
+            g.SetActive(false);
         }
         m_text = GetComponent<Text>();
 		m_leftTime = GetInitialTime();
@@ -43,13 +44,12 @@ public class Timer : MonoBehaviour {
 				//  The countdown clock has finished
 				m_text.text = "STOP 00:00";
 			}
-			if (Minutes == 0 && Seconds == 0) {
-               
-
-                for (int i = 0; i < enemy.Length; i++) {
-					
-					enemy [i].SetActive (true);
-				}
+			if (Minutes == 0 && Seconds == 0 && !fin) {
+                fin = true;
+                foreach (GameObject g in enemy)
+                {
+                    g.SetActive(true);
+                }
 
 			
 			}

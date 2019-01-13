@@ -17,7 +17,8 @@ public class Node : IHeapItem<Node> {
     private LayerMask ItemWakable = LayerMask.GetMask("ItemUnwalkable");
     private LayerMask Door = LayerMask.GetMask("Door");
     private LayerMask[] layers = new LayerMask[5];
-    
+
+
     private enum objectType
     {
         ObjectUnwakableType = 0,
