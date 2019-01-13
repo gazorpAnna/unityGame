@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class LoginConectionBD : MonoBehaviour {
 
     //Login
+	public string url 	= "http://localhost/game_1o_page/";
+	public string JoanIP = "192.168.0.150";
 	public string		mapa = "main";
 	public InputField	textUser;
 	public InputField	textPassword;
@@ -46,7 +48,7 @@ public class LoginConectionBD : MonoBehaviour {
 
     IEnumerator login()
     {
-        WWW conect = new WWW("http://localhost/game_1o_page/login.php?uss=" + textUser.text + "&pss=" + textPassword.text);
+		WWW conect = new WWW(url+"login.php?uss=" + textUser.text + "&pss=" + textPassword.text);
         yield return (conect);
         switch (conect.text)
         {
@@ -67,7 +69,7 @@ public class LoginConectionBD : MonoBehaviour {
     }
     IEnumerator datos()
     {
-        WWW conect = new WWW("http://localhost/game_1o_page/datos.php?uss=" + textUser.text);
+		WWW conect = new WWW(url +"datos.php?uss=" + textUser.text);
         yield return (conect);
         switch (conect.text)
         {
@@ -96,7 +98,7 @@ public class LoginConectionBD : MonoBehaviour {
     }
         IEnumerator register()
         {
-            WWW conect = new WWW("http://localhost/game_1o_page/register.php?uss=" + userText.text+"&name="+nameText.text+"&sname="+surnameText.text+"&email="+emailText.text+"&pss="+passwordText.text);
+			WWW conect = new WWW(url+ "register.php?uss=" + userText.text+"&name="+nameText.text+"&sname="+surnameText.text+"&email="+emailText.text+"&pss="+passwordText.text);
             yield return (conect);
             switch (conect.text)
             {
