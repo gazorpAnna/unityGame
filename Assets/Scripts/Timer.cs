@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour {
 	public int  Minutes = 0;
 	public int  Seconds = 0;
 	public GameObject[] enemy;
+	public GameObject god;
 	
 	private Text    m_text;
 	private float   m_leftTime;
@@ -17,6 +18,8 @@ public class Timer : MonoBehaviour {
 	{
         fin = false;
         enemy = GameObject.FindGameObjectsWithTag("Police");
+		god = GameObject.FindGameObjectWithTag ("Pathfinding");
+		god.SetActive(false); 
         foreach(GameObject g in enemy)
         {
             g.SetActive(false);
@@ -46,6 +49,7 @@ public class Timer : MonoBehaviour {
 			}
 			if (Minutes == 0 && Seconds == 0 && !fin) {
                 fin = true;
+				god.SetActive (true); 
                 foreach (GameObject g in enemy)
                 {
                     g.SetActive(true);
