@@ -8,6 +8,7 @@ public class Node : IHeapItem<Node> {
     // fCost = gCost + hCost
 
     public bool walkable = true;
+    public bool easyWalk = false;
     public Vector3 worldPosition;
     public int gridX;
     public int gridY;
@@ -16,6 +17,7 @@ public class Node : IHeapItem<Node> {
     private LayerMask ItemUnwakable = LayerMask.GetMask("ItemUnwalkable");
     private LayerMask ItemWakable = LayerMask.GetMask("ItemUnwalkable");
     private LayerMask Door = LayerMask.GetMask("Door");
+    private LayerMask EasyWalk = LayerMask.GetMask("EasyWalk");
     private LayerMask[] layers = new LayerMask[5];
 
 
@@ -24,7 +26,8 @@ public class Node : IHeapItem<Node> {
         ObjectUnwakableType = 0,
         ItemUnwakableType = 1,
         ItemWakableType = 2,
-        DoorType = 3
+        DoorType = 3,
+        EasyWalk = 4
     }
     private objectType type;
     
@@ -43,6 +46,7 @@ public class Node : IHeapItem<Node> {
         layers[1] = ItemUnwakable;
         layers[2] = ItemWakable;
         layers[3] = Door;
+        layers[4] = EasyWalk;
 
         for(int i = 0; i < layers.Length; i++)
         {
