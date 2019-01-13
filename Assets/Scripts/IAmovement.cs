@@ -32,39 +32,43 @@ public class IAmovement : MonoBehaviour
             if (offset.x > threshold)
             {
                 lastPos = transform.position;
+                lastMove = new Vector2(1.0f, 0f);
                 playerMoving = true;
-                anim.SetFloat("moveX", 0.5f);
+                anim.SetFloat("moveX", 1.0f);
                 anim.SetFloat("LastMoveX", lastPos.x);
             }
             if (offset.x < threshold)
             {
                 lastPos = transform.position;
+                lastMove = new Vector2(-1.0f, 0f);
                 playerMoving = true;
-                anim.SetFloat("moveX", -0.5f);
-                anim.SetFloat("LastMoveX", lastPos.x);
+                anim.SetFloat("moveX", -1.0f);
+                //anim.SetFloat("LastMoveX", lastPos.x);
             }
 
             if (offset.y > threshold)
             {
                 lastPos = transform.position;
                 playerMoving = true;
-                anim.SetFloat("moveY", 0.5f);
-                anim.SetFloat("LastMoveY", lastPos.y);
+                lastMove = new Vector2(0f, 1.0f);
+                anim.SetFloat("moveY", 1.0f);
+                //anim.SetFloat("LastMoveY", lastPos.y);
             }
             if (offset.y < threshold)
             {
                 lastPos = transform.position;
                 playerMoving = true;
+                lastMove = new Vector2(0f, -0.5f);
                 anim.SetFloat("moveY", -0.5f);
-                anim.SetFloat("LastMoveY", lastPos.y);
+                //anim.SetFloat("LastMoveY", lastPos.y);
             }
 
         }
         //anim.SetFloat("moveX", Input.GetAxisRaw("Horizontal"));
         //anim.SetFloat("moveY", Input.GetAxisRaw("Vertical"));
         anim.SetBool("PlayerMoving", playerMoving);
-        //anim.SetFloat("LastMoveX", lastMove.x);
-        //anim.SetFloat("LastMoveY", lastMove.y);
+        anim.SetFloat("LastMoveX", lastMove.x);
+        anim.SetFloat("LastMoveY", lastMove.y);
         /*if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0f, 0f));
