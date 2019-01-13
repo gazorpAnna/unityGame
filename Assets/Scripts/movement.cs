@@ -25,16 +25,7 @@ public class movement : MonoBehaviour {
         playerMoving = false;
         Vector3 offset = transform.position - lastPos;
 
-        if (transform.hasChanged)
-        {
-            if(offset.x > threshold)
-            {
-                lastPos = transform.position;
-                playerMoving = true;
-                anim.SetFloat("moveX", 0.5f);
-                anim.SetFloat("LastMoveX", lastPos.x);
-            }
-        }
+       
         
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
