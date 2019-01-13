@@ -63,6 +63,14 @@ public class Node : IHeapItem<Node> {
                 {
                     walkable = true;
                 }
+                if (type == objectType.EasyWalk)
+                {
+                    easyWalk = false;
+                }
+                else
+                {
+                    easyWalk = true;
+                }
                 break;
             }      
 
