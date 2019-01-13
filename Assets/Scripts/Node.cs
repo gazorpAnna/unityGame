@@ -50,7 +50,8 @@ public class Node : IHeapItem<Node> {
             if (Physics2D.OverlapCircle(_worldPos, noderadius, layers[i]))
             {
                 type = (objectType)i;
-                if(type == objectType.ObjectUnwakableType)
+				if(type == objectType.ObjectUnwakableType || 
+				type == objectType.ItemUnwakableType)
                 {
                     walkable = false;
                 }
