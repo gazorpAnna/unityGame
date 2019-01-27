@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 58520307}
   - component: {fileID: 58520308}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72416133}
   - component: {fileID: 72416134}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123059494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.88, y: -0.01, z: 0}
+  m_LocalPosition: {x: 3.47, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1.0236499, z: 1}
   m_Children: []
   m_Father: {fileID: 1126846418}
@@ -606,7 +606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141216753}
   - component: {fileID: 141216754}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,7 +685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142289213}
   - component: {fileID: 142289214}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 145458316}
   - component: {fileID: 145458317}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,7 +843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 146988607}
   - component: {fileID: 146988608}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -922,7 +922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 159179221}
   - component: {fileID: 159179222}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 167335706}
   - component: {fileID: 167335707}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204358448}
   - component: {fileID: 204358449}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,7 +1265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205503703}
   - component: {fileID: 205503704}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214569920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8999996, y: -2.42, z: 0}
+  m_LocalPosition: {x: -5.63, y: -2.15, z: 0}
   m_LocalScale: {x: 0.37598112, y: 0.35967875, z: 1}
   m_Children: []
   m_Father: {fileID: 2120489896}
@@ -1534,7 +1534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233314474}
   - component: {fileID: 233314475}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1647,11 +1647,8 @@ MonoBehaviour:
     terrainPenalty: 0
   - terrainMask:
       serializedVersion: 2
-      m_Bits: 1
-    terrainPenalty: 5
-  walkableMask:
-    serializedVersion: 2
-    m_Bits: 257
+      m_Bits: 8192
+    terrainPenalty: 50
 --- !u!4 &235752316
 Transform:
   m_ObjectHideFlags: 0
@@ -1700,7 +1697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252272724}
   - component: {fileID: 252272725}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1779,7 +1776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269177946}
   - component: {fileID: 269177947}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1858,7 +1855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293442482}
   - component: {fileID: 293442483}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1937,7 +1934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 304662650}
   - component: {fileID: 304662651}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2016,7 +2013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313885753}
   - component: {fileID: 313885754}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2201,7 +2198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414278231}
   - component: {fileID: 414278232}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2280,7 +2277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 419354162}
   - component: {fileID: 419354163}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2359,7 +2356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 507848392}
   - component: {fileID: 507848393}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2695,7 +2692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544886717}
   - component: {fileID: 544886718}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2986,7 +2983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631974119}
   - component: {fileID: 631974120}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3065,7 +3062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645727397}
   - component: {fileID: 645727398}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3144,7 +3141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 655541619}
   - component: {fileID: 655541620}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3223,7 +3220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661269657}
   - component: {fileID: 661269658}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3598,7 +3595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762033836}
   - component: {fileID: 762033837}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3693,7 +3690,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798021052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1117651685}
@@ -3702,7 +3699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.3, y: -0.9}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 920.6, y: 458.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798021054
@@ -3752,7 +3749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 809913884}
   - component: {fileID: 809913885}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3831,7 +3828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871150474}
   - component: {fileID: 871150475}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3910,7 +3907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883077731}
   - component: {fileID: 883077732}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3989,7 +3986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895389865}
   - component: {fileID: 895389866}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4174,7 +4171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 944770751}
   - component: {fileID: 944770752}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4253,7 +4250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945929710}
   - component: {fileID: 945929711}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4332,7 +4329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957396343}
   - component: {fileID: 957396344}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4411,7 +4408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957560426}
   - component: {fileID: 957560427}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4490,7 +4487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005518271}
   - component: {fileID: 1005518272}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4569,7 +4566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015606096}
   - component: {fileID: 1015606097}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4754,7 +4751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1040086813}
   - component: {fileID: 1040086814}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4833,7 +4830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054878943}
   - component: {fileID: 1054878944}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4912,7 +4909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1077757822}
   - component: {fileID: 1077757823}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5292,7 +5289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1155914660}
   - component: {fileID: 1155914661}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5697,7 +5694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1177288603}
   - component: {fileID: 1177288604}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5776,7 +5773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189079243}
   - component: {fileID: 1189079244}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5855,7 +5852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1246142029}
   - component: {fileID: 1246142030}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6040,7 +6037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1259026186}
   - component: {fileID: 1259026187}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6119,7 +6116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263274053}
   - component: {fileID: 1263274054}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6198,7 +6195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1295383034}
   - component: {fileID: 1295383035}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6277,7 +6274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1322130248}
   - component: {fileID: 1322130249}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6356,7 +6353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329900718}
   - component: {fileID: 1329900719}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6541,7 +6538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1373695189}
   - component: {fileID: 1373695190}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7044,7 +7041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446696763}
   - component: {fileID: 1446696764}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7167,7 +7164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510947387}
   - component: {fileID: 1510947388}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7246,7 +7243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541399329}
   - component: {fileID: 1541399330}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7325,7 +7322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1549757387}
   - component: {fileID: 1549757388}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7404,7 +7401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1556313821}
   - component: {fileID: 1556313822}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7432,92 +7429,6 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556313820}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: 67f0066ba62e7464fa66a958058d90eb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &1647219064
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1647219065}
-  - component: {fileID: 1647219068}
-  - component: {fileID: 1647219067}
-  - component: {fileID: 1647219066}
-  m_Layer: 5
-  m_Name: TimerText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1647219065
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647219064}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1117651685}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4, y: 23.6}
-  m_SizeDelta: {x: 91.2, y: 17.36}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1647219066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573763423}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -7665,7 +7576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647391843}
   - component: {fileID: 1647391844}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7744,7 +7655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652616464}
   - component: {fileID: 1652616465}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7823,7 +7734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696639184}
   - component: {fileID: 1696639185}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7902,7 +7813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1701317784}
   - component: {fileID: 1701317785}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7981,7 +7892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1709115016}
   - component: {fileID: 1709115017}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8236,7 +8147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747642549}
   - component: {fileID: 1747642550}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8315,7 +8226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768172410}
   - component: {fileID: 1768172411}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8429,7 +8340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812680809}
   - component: {fileID: 1812680810}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8614,7 +8525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814892670}
   - component: {fileID: 1814892671}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8799,7 +8710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1854017647}
   - component: {fileID: 1854017648}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8878,7 +8789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884372991}
   - component: {fileID: 1884372990}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9213,7 +9124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918589768}
   - component: {fileID: 1918589769}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9308,7 +9219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920203446}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.73, y: 0.44, z: 0}
+  m_LocalPosition: {x: 2.82, y: 1.64, z: 0}
   m_LocalScale: {x: 1, y: 1.0236499, z: 1}
   m_Children: []
   m_Father: {fileID: 1126846418}
@@ -9398,7 +9309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920380557}
   - component: {fileID: 1920380558}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9477,7 +9388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937008809}
   - component: {fileID: 1937008810}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9556,7 +9467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1967652163}
   - component: {fileID: 1967652164}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9635,7 +9546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992633473}
   - component: {fileID: 1992633474}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9820,7 +9731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2041056289}
   - component: {fileID: 2041056290}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_52 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9915,7 +9826,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049637379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.61, y: -2.86, z: 0}
+  m_LocalPosition: {x: 2.36, y: -2.86, z: 0}
   m_LocalScale: {x: 1, y: 1.0236499, z: 1}
   m_Children: []
   m_Father: {fileID: 1126846418}
@@ -10021,7 +9932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072599851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.28, y: -1.56, z: 0}
+  m_LocalPosition: {x: 4.35, y: -2.01, z: 0}
   m_LocalScale: {x: 1, y: 1.0236499, z: 1}
   m_Children: []
   m_Father: {fileID: 1126846418}
@@ -10144,7 +10055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2123851807}
   - component: {fileID: 2123851808}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10223,7 +10134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2137790052}
   - component: {fileID: 2137790053}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10302,7 +10213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2139357840}
   - component: {fileID: 2139357841}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: roguelikeSheet_transparent_53 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

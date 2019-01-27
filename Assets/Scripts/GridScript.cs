@@ -11,7 +11,7 @@ public class GridScript : MonoBehaviour {
     public Vector2 gridWorldSize; // [16, 6]
     public float nodeRadius; // 0.5
     public TerrainType[] walkableRegions;
-    public LayerMask walkableMask;
+    LayerMask walkableMask;
     Dictionary<int, int> walkableRegionsDictionary = new Dictionary<int, int>();
 
     Node[,] grid;
@@ -28,7 +28,7 @@ public class GridScript : MonoBehaviour {
 
         foreach(TerrainType region in walkableRegions)
         {
-            unwalkableMask.value |= region.terrainMask.value;
+            walkableMask.value |= region.terrainMask.value;
             walkableRegionsDictionary.Add((int)Mathf.Log(region.terrainMask.value, 2),region.terrainPenalty);
         }
 
@@ -58,7 +58,10 @@ public class GridScript : MonoBehaviour {
 
                 if(walkable)
                 {
-                    Ray ray = new Ray(worldPoint + Vector3.up * 50, Vector3.down);
+                    Ray ray = new Ray(worldPoint + Vector3.forward * 400, Vector3.back);//.down);
+                    Debug.Log(worldPoint);
+                    Debug.DrawRay(worldPoint + Vector3.up * 50, Vector3.down, Color.white);
+                    Debug.Log("-------------");
                     RaycastHit hit;
                     if(Physics.Raycast(ray, out hit, 100, walkableMask))
                     {
@@ -124,6 +127,8 @@ public class GridScript : MonoBehaviour {
             foreach (Node n in grid)
             {
                 Gizmos.color = (n.walkable) ? Color.white : Color.red;
+                if (n.movementPenalty > 0)
+                    Gizmos.color = Color.magenta;
                 /*if(path != null)
                 {
                     if (path.Contains(n))
