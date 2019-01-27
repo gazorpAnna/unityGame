@@ -13,6 +13,7 @@ public class Pathfindind : MonoBehaviour {
 
     PathRequestManager requestManager;
     GridScript grid;
+    private int weight = 20;
 
     private void Awake()
     {
@@ -85,7 +86,8 @@ public class Pathfindind : MonoBehaviour {
                     {
                         continue;
                     }
-                    int newMovementCostToNeighbour = currentNode.gCost + GetDistance(currentNode, neighbour);
+                    int hes = neighbour.easyWalk ? weight : 0;
+                    int newMovementCostToNeighbour = currentNode.gCost + GetDistance(currentNode, neighbour) - hes;
                     if (newMovementCostToNeighbour < neighbour.gCost  // si el cami del veí fins ara es menor que el meu
                         || !openSet.Contains(neighbour))             // o si no he evaluat el veí, evaluo el punt
                     {

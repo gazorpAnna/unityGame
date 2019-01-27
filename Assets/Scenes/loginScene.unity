@@ -1243,8 +1243,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11147e2d59079f64c886895c668f725f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
+  url: http://192.168.0.150/game_1o_page/
+  JoanIP: 192.168.0.150
+  mapa: main
   textUser: {fileID: 814955095}
   textPassword: {fileID: 416009939}
   nameUser: 
