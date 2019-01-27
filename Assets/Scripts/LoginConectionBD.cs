@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 public class LoginConectionBD : MonoBehaviour {
 
     //Login
-	public string url 	= "http://localhost/game_1o_page/";
-	public string JoanIP = "192.168.0.150";
+	public bool isAnna;
 	public string		mapa = "main";
 	public InputField	textUser;
 	public InputField	textPassword;
@@ -30,17 +30,15 @@ public class LoginConectionBD : MonoBehaviour {
 
     //200 --> Usuario encontrado!
     //201 --> Usuario registrado correctamente !
-    public void iniciarSesion()
-    {
-        StartCoroutine(login());
-        
-    }
-    public void goRegister()
-    {
+	public void iniciarSesion()
+	{
+		StartCoroutine (login ());
+	}
+	public void goRegister()
+	{
+		SceneManager.LoadScene ("registerScene");
+	}
 
-        SceneManager.LoadScene("registerScene");
-
-    }
     public void registrarse()
     {
         StartCoroutine(register());
@@ -48,7 +46,18 @@ public class LoginConectionBD : MonoBehaviour {
 
     IEnumerator login()
     {
-		WWW conect = new WWW(url+"login.php?uss=" + textUser.text + "&pss=" + textPassword.text);
+		print ("Loginn");
+		WWW conect;
+		if (isAnna) 
+		{
+			print ("Hola Anna");
+			conect = new WWW ("192.168.58//game_1o_page/login.php?uss=" + textUser.text + "&pss=" + textPassword.text);
+		} 
+		else 
+		{
+			print ("Hola Joan");
+			conect = new WWW ("http://localhost/game_1o_page/login.php?uss=" + textUser.text + "&pss=" + textPassword.text);
+		}
         yield return (conect);
         switch (conect.text)
         {
@@ -61,15 +70,16 @@ public class LoginConectionBD : MonoBehaviour {
 
             case "200":
                 print("Usuario conectado correctamente !");
-				SceneManager.LoadScene(mapa);
+				//SceneManager.LoadScene(mapa);
                 datos();
                 break;
         }
        
     }
+
     IEnumerator datos()
     {
-		WWW conect = new WWW(url +"datos.php?uss=" + textUser.text);
+        WWW conect = new WWW("http://localhost/game_1o_page/datos.php?uss=" + textUser.text);
         yield return (conect);
         switch (conect.text)
         {
@@ -98,7 +108,7 @@ public class LoginConectionBD : MonoBehaviour {
     }
         IEnumerator register()
         {
-			WWW conect = new WWW(url+ "register.php?uss=" + userText.text+"&name="+nameText.text+"&sname="+surnameText.text+"&email="+emailText.text+"&pss="+passwordText.text);
+            WWW conect = new WWW("http://localhost/game_1o_page/register.php?uss=" + userText.text+"&name="+nameText.text+"&sname="+surnameText.text+"&email="+emailText.text+"&pss="+passwordText.text);
             yield return (conect);
             switch (conect.text)
             {
