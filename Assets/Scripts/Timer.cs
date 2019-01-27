@@ -18,12 +18,15 @@ public class Timer : MonoBehaviour {
 	{
         fin = false;
         enemy = GameObject.FindGameObjectsWithTag("Police");
+
         god = GameObject.FindGameObjectWithTag("Pathfinding");
-		//god.SetActive(false); 
-        foreach(GameObject g in enemy)
+        //god.SetActive(false); 
+
+        foreach (GameObject g in enemy)
         {
            // g.SetActive(false);
         }
+		 
         m_text = GetComponent<Text>();
 		m_leftTime = GetInitialTime();
 	}
