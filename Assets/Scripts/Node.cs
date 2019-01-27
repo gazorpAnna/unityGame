@@ -12,6 +12,8 @@ public class Node : IHeapItem<Node> {
     public Vector3 worldPosition;
     public int gridX;
     public int gridY;
+    public int movementPenalty;
+
     public float noderadius = 0.2f;
     private LayerMask ObjectUnwakable = LayerMask.GetMask("ObjectUnwalkable");
     private LayerMask ItemUnwakable = LayerMask.GetMask("ItemUnwalkable");
@@ -36,12 +38,14 @@ public class Node : IHeapItem<Node> {
     public Node parent;
     int heapIndex;
 
-    public Node( Vector3 _worldPos, int _gridX, int _gridY)
+    public Node( Vector3 _worldPos, int _gridX, int _gridY, int _penalty)
     {       
        
         worldPosition = _worldPos;
         gridX = _gridX;
         gridY = _gridY;
+        movementPenalty = _penalty;
+
         layers[0] = ObjectUnwakable;
         layers[1] = ItemUnwakable;
         layers[2] = ItemWakable;

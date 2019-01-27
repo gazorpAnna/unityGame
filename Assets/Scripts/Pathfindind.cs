@@ -86,8 +86,8 @@ public class Pathfindind : MonoBehaviour {
                     {
                         continue;
                     }
-                    int hes = neighbour.easyWalk ? weight : 0;
-                    int newMovementCostToNeighbour = currentNode.gCost + GetDistance(currentNode, neighbour) - hes;
+                    //int hes = neighbour.easyWalk ? weight : 0;
+                    int newMovementCostToNeighbour = currentNode.gCost + GetDistance(currentNode, neighbour) + neighbour.movementPenalty;
                     if (newMovementCostToNeighbour < neighbour.gCost  // si el cami del veí fins ara es menor que el meu
                         || !openSet.Contains(neighbour))             // o si no he evaluat el veí, evaluo el punt
                     {
